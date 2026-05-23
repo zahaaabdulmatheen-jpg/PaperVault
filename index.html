@@ -1,26 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Past Papers Hub</title>
+  <meta charset="UTF-8">
+  <title>Paper Minds</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>📚 Past Papers Hub</h1>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-  <div class="box">
+    <div class="left-nav">
+      <div class="hamburger">☰</div>
 
-    <label>Subject:</label>
-    <select id="subject"></select>
+      <div class="dropdown">
+        <button>Past Papers ▾</button>
+      </div>
 
-    <label>Year:</label>
-    <select id="year"></select>
+      <div class="dropdown">
+        <button>Marking Schemes ▾</button>
+      </div>
 
-    <button onclick="showPapers()">Search</button>
+      <div class="dropdown">
+        <button>Solve Past Papers ▾</button>
+      </div>
+    </div>
 
-  </div>
+  </nav>
 
-  <div id="results"></div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>
+        <span class="paper">PAPER</span><br>
+        <span class="minds">minds</span>
+      </h1>
+
+      <p>All the papers at one place</p>
+
+      <button class="explore-btn" onclick="scrollToPapers()">
+        Explore Papers
+      </button>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/books.png" alt="Books Illustration">
+    </div>
+
+  </section>
+
+  <!-- CONTENT SECTION -->
+  <section id="papers" class="papers-section">
+
+    <h2>Find Past Papers</h2>
+
+    <div class="selector-box">
+
+      <select id="subject">
+        <option>Maths</option>
+        <option>Physics</option>
+        <option>Chemistry</option>
+      </select>
+
+      <select id="year">
+        <option>2023</option>
+        <option>2022</option>
+        <option>2021</option>
+      </select>
+
+      <button onclick="showPapers()">Search</button>
+
+    </div>
+
+    <div id="results"></div>
+
+  </section>
 
   <script src="script.js"></script>
 </body>
