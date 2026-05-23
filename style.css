@@ -1,25 +1,103 @@
 body {
-  font-family: Arial;
-  text-align: center;
-  background: #f2f2f2;
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: #8f9f7a; /* muted green like your image */
 }
 
-.box {
-  background: white;
-  padding: 20px;
-  display: inline-block;
-  border-radius: 10px;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.left-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.dropdown button {
+  background: transparent;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 70px;
+  margin: 0;
+  line-height: 0.9;
+}
+
+.paper {
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.minds {
+  font-style: italic;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.explore-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 350px;
+  max-width: 100%;
+}
+
+/* PAPERS SECTION */
+.papers-section {
+  background: #f4f1e8;
+  padding: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.selector-box {
+  display: flex;
+  gap: 10px;
   margin-top: 20px;
 }
 
 select, button {
   padding: 10px;
-  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #333;
 }
 
 button {
-  background: blue;
-  color: white;
-  border: none;
   cursor: pointer;
 }
