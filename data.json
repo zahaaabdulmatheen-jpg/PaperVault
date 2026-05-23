@@ -1,9 +1,0 @@
-{
-  "Maths": {
-    "2023": ["paper1.pdf", "paper2.pdf"],
-    "2022": ["paper1.pdf"]
-  },
-  "Physics": {
-    "2023": ["paper1.pdf"]
-  }
-}
